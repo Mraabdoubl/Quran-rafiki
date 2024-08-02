@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القرآن رفيق علقات الصديق</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="header-title">بسم الله الرحمان الرحيم</h1>
+    </header>
+    
+    <div class="language-select">
+        <label for="language">اختر لغتك:</label>
+        <select id="language">
+            <option value="ar">العربية</option>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+        </select>
+    </div>
+    
+    <div class="content">
+        <h2 id="welcome-message">مرحبا بك، اختر صورة لملفك الشخصي</h2>
+        <input type="file" accept="image/*">
+        
+        <div class="chat">
+            <h2>دردشة أون لاين</h2>
+            <div id="chat-window" class="chat-window"></div>
+            <textarea id="message-input" placeholder="أكتب رسالتك هنا..." rows="4" cols="50"></textarea><br>
+            <button id="send-btn">إرسال</button>
+        </div>
+        
+        <div class="links">
+            <h2 id="important-links">روابط هامة:</h2>
+            <a href="https://quran.com/ar">قرآن كريم بالصوت و الصورة</a>
+            <a href="https://quran.ksu.edu.sa/m.php#&f=1">مصحف</a>
+        </div>
+    </div>
+    
+    <footer>
+        <h2 id="footer-text">صلوا على النبي</h2>
+    </footer>
+    
+    <div class="channels-link">
+        <a href="channels.html">قنوات دينية</a>
+    </div>
+    
+    <div class="profile-pic">
+        <img src="path-to-your-image.jpg" alt="صورة الملف الشخصي" width="50" height="50">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
